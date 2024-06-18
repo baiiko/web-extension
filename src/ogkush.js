@@ -1398,10 +1398,8 @@ class OGInfinity {
 
   #migrations() {
     if (typeof OGIData.json.lifeformBonus.productionBonus === "undefined") {
-      console.log("test");
-      this.#updateData().then(() => console.log('done'));
+      this.#updateData().then(() => console.log("done"));
     }
-
   }
 
   async #updateData() {
@@ -1411,7 +1409,7 @@ class OGInfinity {
     this.initializeLFTypeName();
     await this.updateEmpireData(true);
     await this.updateLifeform();
-    document.querySelector(".ogl-dialog .close-tooltip").click();
+    document.querySelector(".ogl-dialogOverlay").classList.remove("ogl-active");
   }
 
   init() {
