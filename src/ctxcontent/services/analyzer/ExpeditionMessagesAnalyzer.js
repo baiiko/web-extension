@@ -8,7 +8,7 @@ class ExpeditionMessagesAnalyzer {
   #messages;
 
   constructor() {
-    this.#logger = getLogger("ExpeditionAnalyzer");
+    this.#logger = getLogger("ctxcontent.services.analyzer.ExpeditionMessagesAnalyzer");
   }
 
   support(tabId) {

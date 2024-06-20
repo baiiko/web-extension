@@ -1,6 +1,5 @@
 /// Page Context Imports
 import { initConfOptions, getOptions } from "./ctxpage/conf-options.js";
-import ctxMessageAnalyzer from "./ctxpage/messages-analyzer/index.js";
 import * as DOM from "./util/dom.js";
 import { getLogger } from "./util/logger.js";
 import itemImageID from "./util/enum/itemImageID.js";
@@ -1566,7 +1565,6 @@ class OGInfinity {
     this.harvest();
     this.expedition();
     this.collect();
-    this.messagesAnalyzer();
     this.cleanupMessages();
     this.quickPlanetList();
     this.activitytimers();
@@ -5178,14 +5176,6 @@ class OGInfinity {
     splits[0] = splits[1];
     splits[1] = tmp;
     return new Date(splits.join("/"));
-  }
-
-  /**
-   * It is used to analyze the messages viewed on the "messages" page.
-   * @supported page=messages
-   */
-  messagesAnalyzer() {
-    ctxMessageAnalyzer.call(this);
   }
 
   loading() {

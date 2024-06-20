@@ -9,7 +9,7 @@ class HarvestMessagesAnalyzer {
   #messages;
 
   constructor() {
-    this.#logger = getLogger("HarvestAnalyzer");
+    this.#logger = getLogger("ctxcontent.services.analyzer.HarvestMessagesAnalyzer");
   }
 
   support(tabId) {

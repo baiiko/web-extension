@@ -8,7 +8,7 @@ class FightMessagesAnalyzer {
   #messages;
 
   constructor() {
-    this.#logger = getLogger("FightMessagesAnalyzer");
+    this.#logger = getLogger("ctxcontent.services.analyzer.FightMessagesAnalyzer");
   }
 
   support(tabId) {

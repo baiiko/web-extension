@@ -25,7 +25,7 @@ class SpyMessagesAnalyzer {
   #spyReports = [];
 
   constructor() {
-    this.#logger = getLogger("SpyMessagesAnalyer");
+    this.#logger = getLogger("ctxcontent.services.analyzer.SpyMessagesAnalyer");
 
     window.addEventListener("ogi-spyTableReload", () => {
       this.clean();
