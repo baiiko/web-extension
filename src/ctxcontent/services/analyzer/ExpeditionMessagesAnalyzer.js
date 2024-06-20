@@ -172,7 +172,7 @@ class ExpeditionMessagesAnalyzer {
 
         summary.type["Object"] ? (summary.type["Object"] += 1) : (summary.type["Object"] = 1);
       } else if (type === "combat") {
-        this.#logger.log("Combat", message);
+        this.#logger.debug("Combat", message);
       }
 
       displayLabel(message);

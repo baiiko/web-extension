@@ -1,7 +1,7 @@
 import { getLogger } from "./logger.js";
 
 const OGIObserver = function () {
-  const logger = getLogger("OGI - Observer");
+  const logger = getLogger("util.observer");
 
   const MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
 
@@ -15,7 +15,7 @@ const OGIObserver = function () {
 
     const observer = new MutationObserver(callback);
 
-    logger.log(" Observer started ", { element });
+    logger.debug(" Observer started ", { element });
 
     observer.observe(element, options);
 
